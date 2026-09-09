@@ -141,7 +141,7 @@ OUTPUT / MONITORING
 Detailed source code, flowcharts, and control logic are available in **Folder A - Source Code**
 
 
-## 7. SAFETY
+## 6. SAFETY
 
 Safety is an important part of the Solaform design.
 
@@ -181,7 +181,7 @@ The physical E-Stop arrangement and electrical safety architecture will be docum
 **Folder B - Designs → Safety**
 
 
-## 8. TECHNICAL DESIGN
+## 7. TECHNICAL DESIGN
 
 The project consists of three major design areas:
 
@@ -242,7 +242,7 @@ The prototype will monitor the following parameters where components and budget 
 The control system will log sensor readings, display system status, activate warning indicators, and shut down selected functions when unsafe conditions or predefined limits are detected.
 
 
-## 9. TESTING AND VALIDATION
+## 8. TESTING AND VALIDATION
 
 The prototype will be evaluated through controlled testing and simulation.
 
@@ -264,7 +264,7 @@ The project will also incorporate **stakeholder and market validation** to deter
 Results and evidence will be documented in **Folder C - Documentation**.
 
 
-## 10. MARKETABILITY AND INTENDED APPLICATIONS
+## 9. MARKETABILITY AND INTENDED APPLICATIONS
 
 Potential applications will be investigated through stakeholder validation and market research.
 
@@ -279,7 +279,7 @@ Possible areas of application include:
 These applications will be treated as potential future uses rather than claims that the current prototype is commercially ready.
 
 
-## 11. CURRENT LIMITATIONS
+## 10. CURRENT LIMITATIONS
 
 The current system is a prototype and therefore has several limitations.
 
@@ -296,7 +296,7 @@ These may include:
 
 These limitations will be updated as testing progresses.
 
-## 12. FUTURE DEVELOPMENT
+## 11. FUTURE DEVELOPMENT
 
 Future versions of Solaform could investigate:
 
@@ -318,7 +318,7 @@ Future versions of Solaform could investigate:
 * Modular reactor cartridges.
 
 
-## 13. REPOSITORY STRUCTURE
+## 12. REPOSITORY STRUCTURE
 
 ```text
 technomania-Solaform/
@@ -348,7 +348,7 @@ technomania-Solaform/
     └── References/
 ```
 
-## 14. PROJECT STATUS
+## 13. PROJECT STATUS
 
 **Current stage:** Prototype development and system design.
 
