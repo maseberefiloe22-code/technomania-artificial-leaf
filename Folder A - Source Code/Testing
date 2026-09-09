@@ -1,1 +1,123 @@
+# SOLAFORM Artificial Leaf – Test Results
+
+## 1. Purpose of Testing
+
+The SOLAFORM Artificial Leaf prototype was tested in the Wokwi simulation environment to determine whether the Arduino program, electronic components and control logic operated as intended.
+
+The testing focused on the sensor inputs, system-state transitions, LED indicators, OLED display and overall response of the prototype.
+
+## 2. Testing Environment
+
+Testing was conducted using:
+
+* Arduino Uno
+* Wokwi simulation environment
+* OLED SSD1306 display
+* Photoresistor (LDR)
+* CO₂ simulation potentiometer
+* Temperature simulation potentiometer
+* Push button
+* Green, red and blue LEDs
+* Servo motor
+* DHT22 temperature sensor
+
+The prototype was tested by changing the simulated sensor values and observing the response of the system.
+
+## 3. Test Results
+
+| Test | Component / Function     | Expected Result                                                      | Result |
+| ---- | ------------------------ | -------------------------------------------------------------------- | ------ |
+| 1    | Arduino startup          | System starts in CO₂ capture mode                                    | Pass   |
+| 2    | LDR input                | Solar/light value is read and displayed as a percentage              | Pass   |
+| 3    | CO₂ input                | Simulated CO₂ value is read and displayed in ppm                     | Pass   |
+| 4    | Temperature input        | Simulated temperature value is read and displayed in °C              | Pass   |
+| 5    | Push button              | Pressing the button while in capture mode starts regeneration        | Pass   |
+| 6    | Regeneration temperature | System changes to conversion when temperature reaches 70°C or higher | Pass   |
+| 7    | Green LED                | Green LED remains active during CO₂ capture                          | Pass   |
+| 8    | Red LED                  | Red LED becomes active during regeneration                           | Pass   |
+| 9    | Blue LED                 | Blue LED becomes active during CO₂ conversion                        | Pass   |
+| 10   | OLED display             | System values and operating state are displayed                      | Pass   |
+| 11   | OLED communication       | OLED communicates with the Arduino through I²C                       | Pass   |
+| 12   | Overall state control    | System progresses through the programmed operating states            | Pass   |
+
+## 4. System-State Test
+
+The programmed system contains three main states:
+
+### CO₂ Capture
+
+The system starts in the CO₂ capture state. The green LED is switched on while the red and blue LEDs remain off.
+
+The OLED displays:
+
+* Solar level
+* CO₂ concentration
+* Temperature
+* "CO₂ CAPTURE"
+
+### Regeneration
+
+When the push button is pressed while the system is in the capture state, the system changes to regeneration.
+
+The green LED switches off and the red LED switches on.
+
+The OLED displays:
+
+**"REGENERATING..."**
+
+The system continues monitoring temperature during this stage.
+
+### CO₂ Conversion
+
+When the simulated temperature reaches **70°C or higher**, the system changes from regeneration to CO₂ conversion.
+
+The red LED switches off and the blue LED switches on.
+
+The OLED displays:
+
+**"CO₂ CONVERSION"**
+
+## 5. OLED Display Test
+
+The OLED display was tested to confirm that information from the simulated inputs could be displayed to the user.
+
+The display provides the following information:
+
+* **Solar:** simulated solar/light level
+* **CO₂:** simulated CO₂ concentration
+* **Temp:** simulated temperature
+* **System state:** current operating stage
+
+The OLED therefore provides a simple monitoring interface for the prototype.
+
+## 6. LED Indicator Test
+
+The three LEDs were tested as visual indicators of the system state.
+
+* **Green:** CO₂ capture
+* **Red:** regeneration
+* **Blue:** CO₂ conversion
+
+The LED states changed according to the programmed system-state conditions.
+
+## 7. Overall Test Outcome
+
+The Wokwi simulation demonstrated that the programmed control logic can read simulated inputs, display system information and transition between the main operating states.
+
+The prototype successfully demonstrates the **control and monitoring concept** of the SOLAFORM Artificial Leaf system.
+
+The simulation does not perform actual CO₂ capture, thermal regeneration or electrochemical conversion. These processes are represented through simulated inputs and programmed system states.
+
+## 8. Testing Limitations
+
+The Wokwi prototype has several limitations:
+
+1. The CO₂ concentration is simulated using a potentiometer rather than measured using a physical CO₂ sensor.
+2. The temperature used for the main control logic is simulated using an analogue potentiometer.
+3. The current program uses a push button to initiate regeneration.
+4. The prototype does not physically capture or chemically convert CO₂.
+5. The electrochemical conversion stage is represented by the system state and LED indication.
+6. Wokwi simulation results may differ from the behaviour of a physical prototype.
+
+These limitations are considered when interpreting the test results.
 
