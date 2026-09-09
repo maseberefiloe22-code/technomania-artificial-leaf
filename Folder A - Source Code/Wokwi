@@ -1,4 +1,4 @@
-
+## diagram json
 
 {
   "version": 1,
@@ -101,5 +101,14 @@
   "dependencies": {}
 }
 
+##LIBRARIES
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
 
+# Automatically added based on includes:
+Adafruit GFX Library
+
+Adafruit SSD1306
+Servo
+DHT sensor library
 
