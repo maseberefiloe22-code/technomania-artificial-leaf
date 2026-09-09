@@ -170,7 +170,7 @@ Folder A - Source Code/
     └── [Testing and validation code]
 ```
 
-Files will be added and updated as the prototype development progresses.
+
 
 
 ## 8. Safety-Related Software Logic
