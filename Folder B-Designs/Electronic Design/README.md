@@ -1,4 +1,4 @@
-# SOLAFORM – Electrical Design
+# SOLAFORM – Electronic Design
 
 ## Overview
 
