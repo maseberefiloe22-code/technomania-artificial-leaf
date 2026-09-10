@@ -1,4 +1,4 @@
-# SOLAFORM – System Architecture
+# SOLAFORM – Schematic design
 
 ## Overview
 
