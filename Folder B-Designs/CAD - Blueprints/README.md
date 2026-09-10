@@ -29,12 +29,11 @@ The drawings also support the mechanical, electrical and system architecture doc
 
 ## File Formats
 
-Where applicable, design files may be provided in formats such as:
+The design files are provided in formats such as:
 
-* PNG or JPG for sketches and diagrams
-* PDF for technical drawings
-* STL for 3D-printable models
-* STEP or similar CAD formats for 3D models
+-PNG or JPG for flow diagrams
+-PDF for technical drawings
+-similar CAD formats for 3D models
 
 ## Design Development
 
